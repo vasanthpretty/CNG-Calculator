@@ -10,37 +10,36 @@
 
 <body class="  bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 ">
     <div class="bg-white  max-w-md mx-auto p-8 mt-10 rounded-md shadow-2xl shadow-slate-500 ">
+        <div class="text-sm font-medium pb-1" > Welcome <span id="welcomeText" class=  "font-medium text-lg  text-pink-500"> </span></div>
         <div class="flex justify-between items-center">
             <h1 class="font-bold text-pink-500 hover:text-purple-500 hover:underline"> CNG Cost Calculator</h1>
-            <a href="https://vasanthpretty.github.io/CNG-Calculator/"><svg xmlns="http://www.w3.org/2000/svg" class="text-purple-500 hover:text-pink-500" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" fill-rule="evenodd" d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2Z"/></svg></a>
-
-
+            <a href="https://vasanthpretty.github.io/CNG-Calculator/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="text-purple-500 hover:text-pink-500" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" fill-rule="evenodd" d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2Z"/></svg></a>
 
         </div>
         <form action="" class="mt-5 ">
             <div class="">
-                <label for="Trip distance" class="  font-semibold"> Trip Distance <span class="text-red-600 ">*</span>
+                <label for="Trip_distance" id="trip_Label" class="font-semibold"> Trip Distance <span class="text-red-600 ">*</span>
 
                 </label>
-                <input id="Trip distance" required type="number" placeholder="Enter the Distance" class="form-input ">
+                <input id="Trip_distance" required type="number" placeholder="Enter the Distance" class="form-input ">
             </div>
             <div class="">
-                <label for="Fuel Efficiency" class="  font-semibold"> Fuel Efficiency <span
+                <label for="Fuel_Efficiency" class="  font-semibold"> Fuel Efficiency <span
                         class="text-red-600 ">*</span>
 
                 </label>
 
-                <input id="Fuel Efficiency" required type="number" placeholder="Fuel efficiency" class="form-input ">
+                <input id="Fuel_Efficiency" required type="number" value="46" placeholder="Fuel efficiency" class="form-input ">
                 <!-- see main.css for #form.input -->
             </div>
             <div class="">
-                <label for="Fuel cost" class="  font-semibold"> Fuel cost <span class="text-red-600 ">*</span>
+                <label for="Fuel_cost"  class="font-semibold"> Fuel cost <span class="text-red-600 ">*</span>
 
                 </label>
-                <input id="Fuel cost" required type="number" placeholder="Fuel cost"
+                <input id="Fuel_cost"  required type="number" placeholder="Fuel cost"
                     class="outline-none bg-gray-100 p-2 my-2 w-full ">
             </div>
-            <button class="w-full font-medium rounded-md py-1 mt-5 relative group bg-purple-400   inline ">
+            <button id="CalculateBtn" class="w-full font-medium rounded-md py-1 mt-5 relative group bg-purple-400   inline ">
                 <span class="absolute top-0 left-0 flex w-full rounded-md h-0 mb-0 transition-all duration-300 ease-out transform translate-y-0 bg-purple-600 group-hover:h-full opacity-80"></span>
                 <span class="relative group-hover:text-white">
                 
@@ -51,19 +50,12 @@
                     <span class="relative group-hover:text-white">Button Text</span>
                     </a> -->
 
-
         </form>
-
-
-       
-
 
     </div>
     
-   
-
-
-
+<script src="./assets/css/main.js"></script>
+<script src="./assets/css/learning.js"></script>
 
 </body>
 
